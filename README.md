@@ -1,55 +1,91 @@
-📊 MySQL Projects
-Welcome to my repository dedicated to various MySQL database projects! This collection showcases my work with relational databases, focusing on database design, SQL querying, optimization, and practical applications of MySQL.
+# Arsenal_EPL_dataset
 
-🚀 Overview
-This repository serves as a portfolio of my MySQL projects, ranging from simple database schemas to more complex applications involving advanced SQL functionalities. Each project is designed to demonstrate different aspects of MySQL, including:
+Dataset of Arsenal matches and player statistics from 2017/18 season until 28.02.2023.
 
-Database Design: ERD (Entity-Relationship Diagram) creation, normalization, and schema definition.
+### Context
 
-SQL Queries: Complex SELECT statements, JOIN operations, subqueries, and aggregate functions.
+Ever since I started working with data, I've always wanted to break down the statistics of my favorite football club, Arsenal FC. So, I put together this dataset so that you too can dive into the world of football and the world of Arsenal in particular.
 
-Data Manipulation: INSERT, UPDATE, DELETE operations.
+### Content
 
-Stored Procedures & Functions: Reusable code blocks for efficient data processing.
+This dataset includes **214** results of Arsenal FC matches starting from 2017/18 season up to 28.02.2022, **2741** record of every player, who played in these matches with advanced statistics and **218** records of every goalkeeper.
 
-Triggers & Events: Automating database tasks and maintaining data integrity.
+`players.csv` includes the following columns:
 
-Indexing & Optimization: Strategies for improving query performance.
+-   `LastName` - Player's last name
+-   `FirstName` - Player's first name
+-   `Date` - Match date
+-   `Start` - Starting lineup (1 - in start, 0 - from bench)
+-   `Pos` - Position
+-   `Min` - Minutes played
+-   `G` - Goals
+-   `A` - Assists
+-   `PK` - Penalty kicks made
+-   `PKA` - Penalty kicks attempted
+-   `S` - Total shots
+-   `SoT` - Shots on target
+-   `Touches` - Total touches
+-   `Tackles` - Total tackles
+-   `Ints` - Interceptions
+-   `Blocks` - Blocks
+-   `xG` - Expected goals
+-   `npxG` - Expected non-penalty goals
+-   `xAG` - Expected assists
+-   `Passes` - Total passes
+-   `PassesA` - Attempted passes
+-   `PrgPas` - Progressive passes
+-   `Carries` - Number of times player controlled the ball
+-   `PrgCar` - Progressive carries
+-   `Line` - Line (forward, midfielder, defender)
+-   `C` - Squad's captain
 
-📁 Project Structure
-Each project typically resides in its own dedicated folder. Inside each project folder, you'll generally find:
+`goalkeepers.csv` includes the following columns:
 
-Schema.sql: SQL script(s) for creating the database, tables, and defining relationships.
+-   `LastName` - Goalkeeper's last name
+-   `FirstName` - Goalkeeper's first name
+-   `Date` - Match date
+-   `Start` - Starting lineup (1 - in start, 0 - from bench)
+-   `Pos` - Position
+-   `Min` - Minutes played
+-   `SoTA` - Shots on target against
+-   `GA` - Goals against
+-   `Saves` - Total saves
+-   `PSxG` - Post-shot expected goals
+-   `PKatt` - Penalty kick attempted
+-   `PKA` - Penalty kick allowed
+-   `PKm` - Penalty kick missed
+-   `PassAtt` - Passes attempted
+-   `Throws` - Throws attempted
+-   `AvgLen` - Average pass length (in yards)
+-   `GKAtt` - Goal kicks attempted
+-   `GKAvgLen` - Average goal kick length (in yards)
+-   `C` - Squad's captain
 
-Data.sql: SQL script(s) for populating the database with sample data.
+`matches.csv` includes the following columns:
 
-Queries.sql: A collection of SQL queries demonstrating various functionalities or solving specific problems related to the project.
+-   `Season` - Season
+-   `Tour` - Matchweek
+-   `Date` - Date of the match
+-   `Time` - Time of the match
+-   `Opponent` - Opponent team
+-   `HoAw` - Arsenal's home/away
+-   `ArsenalScore` - Arsenal goals
+-   `OpponentScore` - Arsenal's opponent goals
+-   `Stadium` - Match stadium
+-   `Attendance` - Match attendance
+-   `Coach` - Arsenal's head coach
+-   `Referee` - Referee of the match
 
-project_name.md or README.md: A project-specific README detailing its purpose, design choices, and how to run it.
+### Notes
 
-er_diagram.png/drawio: Visual representation of the database schema.
+This dataset will be updated with new matches as well as for past seasons.
+COYG!
 
-🤝 Contributing
-Contributions are welcome! If you have suggestions for improvements, find a bug, or want to add a new project, please feel free to:
+### Acknowledgements
 
-Fork the repository.
+The data is gathered from several sources including transfermarkt, flashscore and fbref.com.
 
-Create a new branch (git checkout -b feature/AmazingFeature).
+### Author
 
-Make your changes.
-
-Commit your changes (git commit -m 'Add some AmazingFeature').
-
-Push to the branch (git push origin feature/AmazingFeature).
-
-Open a Pull Request.
-
-📄 License
-This project is licensed under the MIT License.
-
-📞 Contact
-Warren Shitsma - https://warren-shitsama.github.io/WarrenShitsama.github.io/
-
-GitHub: Warren-Shitsama
-
-Email: warrenshitsama.work@gmail.com
+Rustem "bokushi" N.\
+Ufa, Russian Federation
